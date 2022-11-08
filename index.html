@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./input_autocomplete.css">
+</head>
+<body>
+
+    <form autocomplete="off" class="form-autocomplete">
+
+        <div>
+            <input type="text" class="input-autocomplete" placeholder="" onkeyup="input_autocomplete({selectoInput:'.input-autocomplete', list_autocomplete: list_autocomplete, selector_listItems:'.list-items-autocomplete', contanier_inputs:'.form-autocomplete'})">
+        </div>
+        <ul class="list-items-autocomplete"></ul>
+
+    </form>
+
+    <script src="./input_autocomplete.js"></script>
+</body>
+</html>
